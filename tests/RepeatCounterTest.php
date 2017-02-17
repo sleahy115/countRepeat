@@ -110,6 +110,19 @@ require_once "src/RepeatCounter.php";
                 //Assert
                 $this->AssertEquals(0, $result);
         }
+        function test_ell()
+        {
+            $test_string = new RepeatCounter;
+                //Arrange
+                $input1 = "hello how are you?";
+                $input2 = "ell";
+                $test_string->countRepeats($input1, $input2);
+                //Act
+                $result = $test_string->countRepeats($input1, $input2);
+                //Assert
+                $this->AssertEquals(0, $result);
+        }
+
 
     }
  ?>
