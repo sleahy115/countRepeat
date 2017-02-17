@@ -18,9 +18,11 @@
    });
 
    $app->post("/phrase-output", function() use ($app) {
+
        $new_phrase = new RepeatCounter($_POST["phrase"],$_POST["search"]);
-       var_dump($new_phrase);
-       $app['twig']->render('phrase-output.html.twig', array("count"=>$new_phrase));
+       $matches = RepeatCounter:: countRepeats($_POST["phrase"],$_POST["search"]);
+
+       return $app['twig']->render('phrase-output.html.twig',array("count"=>$matches, "phrase" =>$_POST["phrase"], "word"=>$_POST["search"]));
    });
 
    return $app;
