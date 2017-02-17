@@ -26,5 +26,42 @@ require_once "src/RepeatCounter.php";
                 //Assert
                 $this->AssertEquals(2, $result);
         }
+        function test_2()
+        {
+            $test_string = new RepeatCounter;
+                //Arrange
+                $input1 = "2017";
+                $input2 = "2";
+                $test_string->countRepeats($input1, $input2);
+                //Act
+                $result = $test_string->countRepeats($input1, $input2);
+                //Assert
+                $this->AssertEquals(1, $result);
+        }
+        function test_2Multiple()
+        {
+            $test_string = new RepeatCounter;
+                //Arrange
+                $input1 = "201722021";
+                $input2 = "2";
+                $test_string->countRepeats($input1, $input2);
+                //Act
+                $result = $test_string->countRepeats($input1, $input2);
+                //Assert
+                $this->AssertEquals(4, $result);
+        }
+        function test_how()
+        {
+            $test_string = new RepeatCounter;
+                //Arrange
+                $input1 = "how are you?";
+                $input2 = "how";
+                $test_string->countRepeats($input1, $input2);
+                //Act
+                $result = $test_string->countRepeats($input1, $input2);
+                //Assert
+                $this->AssertEquals(1, $result);
+        }
+
     }
  ?>
