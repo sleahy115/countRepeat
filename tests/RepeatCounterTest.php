@@ -74,6 +74,18 @@ require_once "src/RepeatCounter.php";
                 //Assert
                 $this->AssertEquals(1, $result);
         }
+        function test_howLong()
+        {
+            $test_string = new RepeatCounter;
+                //Arrange
+                $input1 = "How are you Megan? I am good Tom. How was your weekend?";
+                $input2 = "how";
+                $test_string->countRepeats($input1, $input2);
+                //Act
+                $result = $test_string->countRepeats($input1, $input2);
+                //Assert
+                $this->AssertEquals(2, $result);
+        }
 
     }
  ?>
