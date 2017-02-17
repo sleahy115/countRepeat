@@ -27,9 +27,10 @@
             }else {
                 $wordArray = str_split($string);
             }
-            var_dump($wordArray);
             foreach($wordArray as $match){
-                if (strlen($word) == strlen($match)){
+                if (strlen($word) != strlen($match)){
+                    $count = 0;
+                }elseif (strlen($word) == strlen($match))  {
                     $count = substr_count($string, $word);
                     return $count;
                 }
