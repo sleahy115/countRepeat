@@ -6,19 +6,40 @@ body{
     font-family: aclonica;
     border-style: inset;
     border-color: #669999;
+    text-align: center;
+}
+.instructions{
+    background-color: white;
+    font-size: 25px;
+    font-family: oswald;
+    font-style: bold;
+    margin: 25px;
+    border-style: inset;
+    border-color: #669999;
+    padding: 10px;
+    font-style: bold;
+    border-radius: 5px;
+}
+label{
+    font-size: 30px;
+    font-family: aclonica;
+    margin-top: 10px;
 }
 input{
     border-style: inset;
     border-color: #669999;
+}
+#phrase{
+    height: 100px;
 }
 #word-output{
     font-size: 30px;
     font-family: aclonica;
 }
 #phrase-output{
-    font-style: bold;
+    font-size: 25px;
     font-family: oswald;
-    font-size: 20px;
+    font-style: bold;
 }
 #char-output{
     font-style: bold;
@@ -28,7 +49,7 @@ input{
 button{
     background-color: #669999;
     color: white;
-}
-.words{
-    color: teal;
+    font-family: aclonica;
+    font-size: 30px;
+    margin: 10px;
 }

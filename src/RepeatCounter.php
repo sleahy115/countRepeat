@@ -1,20 +1,20 @@
 <?php
     class RepeatCounter
     {
-        // private $word;
-        // private $phrase;
-        // function __construct($new_word, $new_phrase)
-        // {
-        //     $this->word = $new_word;
-        //     $this->phrase = $new_phrase;
-        // }
-        // function getWord(){
-        //     return $this->word;
-        // }
-        //
-        // function getPhrase(){
-        //     return $this->phrase;
-        // }
+        private $word;
+        private $phrase;
+        function __construct($new_word, $new_phrase)
+        {
+            $this->word = $new_word;
+            $this->phrase = $new_phrase;
+        }
+        function getWord(){
+            return $this->word;
+        }
+
+        function getPhrase(){
+            return $this->phrase;
+        }
 
         static function countRepeats($string, $word)
         {

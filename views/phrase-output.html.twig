@@ -14,21 +14,25 @@
             </div> <!--jumbotron-->
             <div class="panel panel-default">
                 <div class="panel-heading" id="char-output">
-                    Your phrase has {{number-chars}} characters total.
+                    Your paper has {{number_chars}} characters total.
                 </div> <!--panel-heading-->
                 <div class="panel-heading" id="char-output">
-                    Your phrase has {{number-words}} words total.
+                    Your paper has {{number_words}} words total.
                 </div> <!--panel-heading-->
                 <div class="panel-heading" id="word-output">
                     {% if count is not empty%}
                     The word <em>"{{word}}"</em> appears {{count}} times in:
                     {% endif%}
                     {% if count is empty%}
-                        <p>Sorry, we cant find that word in:</p>
+                        <p>Sorry, we cant find <em>"{{word}}"</em> in:</p>
                     {% endif%}
                 </div> <!--panel-heading-->
                 <div class="panel-body" id="phrase-output">
                     {{phrase}}
+                    {% if count > 5%}
+                    <p>You might be overusing this word, check out the thesaurus link for alternate words.</p>
+                    <a href="http://www.thesaurus.com/"><button type="button">Thesaurus</button></a>
+                    {% endif %}
                 </div> <!--panel-body-->
             </div> <!--panel-->
             <a href="/"><button type="button">Check another word</button></a>

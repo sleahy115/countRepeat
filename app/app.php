@@ -23,7 +23,7 @@
        $matches = RepeatCounter:: countRepeats($_POST["phrase"],$_POST["search"]);
        $how_many_chars = RepeatCounter::countChars($_POST["phrase"]);
        $how_many_words = RepeatCounter::countWords($_POST["phrase"]);
-       return $app['twig']->render('phrase-output.html.twig',array("count"=>$matches, "phrase" =>$_POST["phrase"], "word"=>$_POST["search"], "number-chars"=>$how_many_chars, "number-words"=>$how_many_words));
+       return $app['twig']->render('phrase-output.html.twig',array("count"=>$matches, "phrase" =>$_POST["phrase"], "word"=>$_POST["search"], "number_chars"=>$how_many_chars, "number_words"=>$how_many_words));
    });
 
    return $app;
