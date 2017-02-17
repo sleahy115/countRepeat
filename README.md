@@ -27,7 +27,7 @@ This project counts the frequency of a word appearing in a phrase. The user will
 | Behavior - Our Program should Handle?| Input         | Output |             
 |----------------------------------------------------------|----------|
 |  Single number                             | "hi", "h" |  1|
-|  Single letter with multiple occurrences    | "How are you?", "o"   |  2|
+|  Single letter with multiple occurrences    | "How are you?", "o"   |  0|
 |  Single number                             | 2017, 2   |  1|
 |  Single number with multiple occurrences           | 201722021, 2   |  4|
 |  Single word                               | "How are you?", "How" |  1|
