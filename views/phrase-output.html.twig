@@ -13,6 +13,9 @@
                 <h1>results</h1>
             </div> <!--jumbotron-->
             <div class="panel panel-default">
+                <div class="panel-heading" id="char-output">
+                    Your phrase has {{number}} characters total.
+                </div> <!--panel-heading-->
                 <div class="panel-heading" id="word-output">
                     {% if count is not empty%}
                     The word <em>"{{word}}"</em> appears {{count}} times in:

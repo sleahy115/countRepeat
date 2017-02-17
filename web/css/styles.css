@@ -20,6 +20,11 @@ input{
     font-family: oswald;
     font-size: 20px;
 }
+#char-output{
+    font-style: bold;
+    font-family: aclonica;
+    font-size: 30px;
+}
 button{
     background-color: #669999;
     color: white;

@@ -34,6 +34,7 @@ This project counts the frequency of a word appearing in a phrase. The user will
 |  Single word with using capitalization.    |  "How are you?", "HOW"|  1|
 |  Single word in long string with capital, non capital letters, and punctuation|"How are you Megan? I am good Tom. How was your weekend?", "how" | 2
 |  Partial match     |  "How are you?", "ow"|  0|
+|  Partial match -match that is the same length as other words in phrase    |  "Hello how are you?", "ell"|  0|
 
 * Phase 4 - Initial Silex framework with "Hello" on home page
 * Phase 5 - Create twig framework with a form to enter word, and string to be searched.
