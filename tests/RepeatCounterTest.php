@@ -24,7 +24,7 @@ require_once "src/RepeatCounter.php";
                 //Act
                 $result = $test_string->countRepeats($input1, $input2);
                 //Assert
-                $this->AssertEquals(2, $result);
+                $this->AssertEquals(false, $result);
         }
         function test_2()
         {
@@ -85,6 +85,18 @@ require_once "src/RepeatCounter.php";
                 $result = $test_string->countRepeats($input1, $input2);
                 //Assert
                 $this->AssertEquals(2, $result);
+        }
+        function test_partial()
+        {
+            $test_string = new RepeatCounter;
+                //Arrange
+                $input1 = "How are you Megan? I am good Tom. How was your weekend?";
+                $input2 = "ow";
+                $test_string->countRepeats($input1, $input2);
+                //Act
+                $result = $test_string->countRepeats($input1, $input2);
+                //Assert
+                $this->AssertEquals(0, $result);
         }
 
     }
