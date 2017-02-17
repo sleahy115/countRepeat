@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Aclonica" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link href="css/styles.css" rel="stylesheet" type="text/css">
         <title>Repeat Counter</title>
@@ -13,13 +14,18 @@
             </div> <!--jumbotron-->
             <div class="panel panel-default">
                 <div class="panel-heading" id="word-output">
-                    The word {{word}} appears {{count}} times in
+                    {% if count is not empty%}
+                    The word <em>"{{word}}"</em> appears {{count}} times in:
+                    {% endif%}
+                    {% if count is empty%}
+                        <p>Sorry, we cant find that word in:</p>
+                    {% endif%}
                 </div> <!--panel-heading-->
                 <div class="panel-body" id="phrase-output">
                     {{phrase}}
                 </div> <!--panel-body-->
             </div> <!--panel-->
-            <a href="/"><button type="button">Check another word</button></button>
+            <a href="/"><button type="button">Check another word</button></a>
         </div> <!--container-->
     </body>
 </html>

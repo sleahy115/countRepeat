@@ -3,9 +3,27 @@ body{
 }
 .jumbotron{
     margin-top: 20px;
+    font-family: aclonica;
+    border-style: inset;
+    border-color: #669999;
+}
+input{
+    border-style: inset;
+    border-color: #669999;
 }
 #word-output{
     font-size: 30px;
+    font-family: aclonica;
 }
 #phrase-output{
-    font-style: italic;
+    font-style: bold;
+    font-family: oswald;
+    font-size: 20px;
+}
+button{
+    background-color: #669999;
+    color: white;
+}
+.words{
+    color: teal;
+}
