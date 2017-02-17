@@ -36,6 +36,7 @@ This project counts the frequency of a word appearing in a phrase. The user will
 |  Partial match     |  "How are you?", "ow"|  0|
 |  Partial match -match that is the same length as other words in phrase    |  "Hello how are you?", "ell"|  0|
 | Count total number of characters entered  |"hello"| 5|
+| Count total number of words entered  |"hello"| 1|
 
 * Phase 4 - Initial Silex framework with "Hello" on home page
 * Phase 5 - Create twig framework with a form to enter word, and string to be searched.

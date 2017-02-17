@@ -36,8 +36,13 @@
             }
         }
 
+        static function countChars($string){
+            $number_of_chars =strlen($string);
+            return $number_of_chars;
+        }
+
         static function countWords($string){
-            $number_of_words =strlen($string);
+            $number_of_words =str_word_count($string);
             return $number_of_words;
         }
     }

@@ -14,7 +14,10 @@
             </div> <!--jumbotron-->
             <div class="panel panel-default">
                 <div class="panel-heading" id="char-output">
-                    Your phrase has {{number}} characters total.
+                    Your phrase has {{number-chars}} characters total.
+                </div> <!--panel-heading-->
+                <div class="panel-heading" id="char-output">
+                    Your phrase has {{number-words}} words total.
                 </div> <!--panel-heading-->
                 <div class="panel-heading" id="word-output">
                     {% if count is not empty%}

@@ -127,11 +127,22 @@ require_once "src/RepeatCounter.php";
             $test_string = new RepeatCounter;
                 //Arrange
                 $input1 = "hello";
+                $test_string->countChars($input1);
+                //Act
+                $result = $test_string->countChars($input1);
+                //Assert
+                $this->AssertEquals(5, $result);
+        }
+        function test_wordCount()
+        {
+            $test_string = new RepeatCounter;
+                //Arrange
+                $input1 = "hello";
                 $test_string->countWords($input1);
                 //Act
                 $result = $test_string->countWords($input1);
                 //Assert
-                $this->AssertEquals(5, $result);
+                $this->AssertEquals(1, $result);
         }
 
 
