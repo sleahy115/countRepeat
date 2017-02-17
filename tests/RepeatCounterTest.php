@@ -62,6 +62,18 @@ require_once "src/RepeatCounter.php";
                 //Assert
                 $this->AssertEquals(1, $result);
         }
+        function test_howCapital()
+        {
+            $test_string = new RepeatCounter;
+                //Arrange
+                $input1 = "how are you?";
+                $input2 = "HOW";
+                $test_string->countRepeats($input1, $input2);
+                //Act
+                $result = $test_string->countRepeats($input1, $input2);
+                //Assert
+                $this->AssertEquals(1, $result);
+        }
 
     }
  ?>
