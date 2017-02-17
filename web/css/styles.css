@@ -1,12 +1,16 @@
 body{
-    background-color: teal;
+    background-image: url("../img/notebook-paper.jpg");
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+    height: auto;
 }
 .jumbotron{
     margin-top: 20px;
     font-family: aclonica;
     border-style: inset;
-    border-color: #669999;
+    border-color: #b3b300;
     text-align: center;
+    background-color: white;
 }
 .instructions{
     background-color: white;
@@ -15,9 +19,8 @@ body{
     font-style: bold;
     margin: 25px;
     border-style: inset;
-    border-color: #669999;
+    border-color: #b3b300;;
     padding: 10px;
-    font-style: bold;
     border-radius: 5px;
 }
 label{
@@ -53,3 +56,6 @@ button{
     font-size: 30px;
     margin: 10px;
 }
+/*.form-group {
+    background-image:url("../img/sprial.png");
+}*/
