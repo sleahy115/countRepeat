@@ -1,0 +1,11 @@
+body{
+    background-color: teal;
+}
+.jumbotron{
+    margin-top: 20px;
+}
+#word-output{
+    font-size: 30px;
+}
+#phrase-output{
+    font-style: italic;

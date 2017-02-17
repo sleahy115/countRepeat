@@ -2,17 +2,24 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
         <title>Repeat Counter</title>
     </head>
     <body>
-        <h1>Repeat Counter</h1>
-        <h3>How many times does a word appear in a phrase or paragraph?</h3>
-        <form action="/phrase-output" method="post">
-            <label for="phrase">Enter test to search</label>
-            <input type="text" name="phrase" id="phrase">
-            <label for="search">Enter word to search for</label>
-            <input type="text" name="search" id="search">
-            <button type="submit">Go!</button>
-        </form>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Repeat Counter</h1>
+                <h3>How many times does a word appear in a phrase or paragraph?</h3>
+            </div> <!--jumbotron-->
+            <form action="/phrase-output" method="post" class="form-group">
+                <label for="phrase">Enter test to search</label>
+                <input type="text" name="phrase" id="phrase" class="form-control">
+                <label for="search">Enter word to search for</label>
+                <input type="text" name="search" id="search" class="form-control">
+                <br>
+                <button type="submit">Go!</button>
+            </form>
+        </div> <!--container-->
     </body>
 </html>

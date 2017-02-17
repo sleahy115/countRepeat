@@ -2,16 +2,23 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="styles.css" type="text/css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
         <title>Repeat Counter</title>
     </head>
     <body>
-        <p>
-            The word {{word}} appears {{count}} times in
-            <div class="phrase-output">
-            {{phrase}}
-            </div>
-        </p>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>results</h1>
+            </div> <!--jumbotron-->
+            <div class="panel panel-default">
+                <div class="panel-heading" id="word-output">
+                    The word {{word}} appears {{count}} times in
+                </div> <!--panel-heading-->
+                <div class="panel-body" id="phrase-output">
+                    {{phrase}}
+                </div> <!--panel-body-->
+            </div> <!--panel-->
+        </div> <!--container-->
     </body>
 </html>

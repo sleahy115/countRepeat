@@ -21,7 +21,9 @@
 
        $new_phrase = new RepeatCounter($_POST["phrase"],$_POST["search"]);
        $matches = RepeatCounter:: countRepeats($_POST["phrase"],$_POST["search"]);
-
+       var_dump($matches);
+       var_dump($_POST["phrase"]);
+       var_dump($_POST["search"]);
        return $app['twig']->render('phrase-output.html.twig',array("count"=>$matches, "phrase" =>$_POST["phrase"], "word"=>$_POST["search"]));
    });
 
