@@ -1,6 +1,5 @@
 body{
     background-image: url("../img/notebook-paper.jpg");
-    /*background-repeat: no-repeat;*/
     background-size: cover;
     height: auto;
 }
@@ -50,12 +49,9 @@ input{
     font-size: 30px;
 }
 button{
-    background-color: #669999;
-    color: white;
+    background-color: #ffff99;
+    color: black;
     font-family: aclonica;
     font-size: 30px;
     margin: 10px;
 }
-/*.form-group {
-    background-image:url("../img/sprial.png");
-}*/

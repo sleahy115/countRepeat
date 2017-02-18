@@ -3,6 +3,7 @@
     {
         private $word;
         private $phrase;
+
         function __construct($new_word, $new_phrase)
         {
             $this->word = $new_word;
@@ -36,13 +37,15 @@
             }
         }
 
-        static function countChars($string){
-            $number_of_chars =strlen($string);
+        static function countChars($string)
+        {
+            $number_of_chars = strlen($string);
             return $number_of_chars;
         }
 
-        static function countWords($string){
-            $number_of_words =str_word_count($string);
+        static function countWords($string)
+        {
+            $number_of_words = str_word_count($string);
             return $number_of_words;
         }
     }

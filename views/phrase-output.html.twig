@@ -21,7 +21,7 @@
                 </div> <!--panel-heading-->
                 <div class="panel-heading" id="word-output">
                     {% if count is not empty%}
-                    The word <em>"{{word}}"</em> appears {{count}} times in:
+                        The word <em>"{{word}}"</em> appears {{count}} times in:
                     {% endif%}
                     {% if count is empty%}
                         <p>Sorry, we cant find <em>"{{word}}"</em> in:</p>
@@ -30,8 +30,10 @@
                 <div class="panel-body" id="phrase-output">
                     {{phrase}}
                     {% if count > 5%}
-                    <p>You might be overusing this word, check out the thesaurus link for alternate words.</p>
-                    <a href="http://www.thesaurus.com/"><button type="button">Thesaurus</button></a>
+                        <div class="panel-heading" id="thesaurus">
+                            <p><em>You might be overusing this word, check out the thesaurus link for alternate words.</em></p>
+                            <a href="http://www.thesaurus.com/"><button type="button">Thesaurus</button></a>
+                        </div>
                     {% endif %}
                 </div> <!--panel-body-->
             </div> <!--panel-->
