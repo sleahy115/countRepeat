@@ -26,13 +26,13 @@ This project counts the frequency of a word appearing in a paper. The user will 
 
 | Behavior - Our Program should Handle?| Input         | Output |             
 |----------------------------------------------------------|----------|
-|  Single letter                            | "hi", "h" |  0|
-|  Single letter with multiple occurrences    | "How are you?", "o"   |  0|
-|  Single number                             | 2017, 2   |  1|
-|  Single number with multiple occurrences           | 201722021, 2   |  4|
+|  Single letter                             | "hi", "h"             |  0|
+|  Single letter with multiple occurrences   | "How are you?", "o"   |  0|
+|  Single number                             | 2017, 2               |  1|
+|  Single number with multiple occurrences   | 201722021, 2          |  4|
 |  Single word                               | "How are you?", "How" |  1|
 |  Single word with using capitalization.    |  "How are you?", "HOW"|  1|
-|  Single word in long string with capital, non capital letters, and punctuation.|"How are you Megan? I am good Tom. How was your weekend?", "how" | 2
+|  Single word in long string with capital, non capital letters, and punctuation.|"How are you Megan? I am good Tom. How was your weekend?", "how" | 2|
 |  Partial match     |  "How are you?", "ow"|  0|
 |  Partial match -match that is the same length as other words in phrase    |  "Hello how are you?", "ell"|  0|
 | Count total number of characters entered  |"hello"| 5|
